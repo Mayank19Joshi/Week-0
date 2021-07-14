@@ -2,8 +2,8 @@
 using namespace std;
 int main()
 {
-    #linear search 
-    int arr[50],i,n,cmp=0,l=0;  #cmp for compare and a flag 
+    int arr[50],i,n,cmp=0,l=0;  
+    int key;
     cout<<"Enter the range"<<endl;
     cin>>n;
     cout<<"Enter the elements of the array"<<endl;
@@ -11,7 +11,6 @@ int main()
     {
         cin>>arr[i];
     }
-    int key;
     cout<<"Enter the key element"<<endl;
     cin>>key;
     for(i=0;i<=n-1;i++)
