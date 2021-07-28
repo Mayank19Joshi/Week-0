@@ -1,4 +1,5 @@
-#include<stdio.h>
+#include<iostream>
+using namespace std;
 int binsearch(int arr[],int F,int L,int ele)
 {
 	if(F<L)
@@ -18,24 +19,22 @@ int main()
 {
 	int n,i,ele;
 	int arr[100];
-	printf("\n\tEnter the number of elements : ");
-	scanf("%d",&n);
-	printf("\n\tEnter the array :\n");
+	cout<<"Enter the number of elements"<<endl;
+	cin>>n;
+	cout<<"Enter the elements of array"<<endl;
 	while(i<n)
 	{
-		printf("\t");
-		scanf("%d",&arr[i]);
+		cin>>arr[i];
 		i++;
 	}
-	printf("\n\tEnter element to be searched : ");
-	scanf("%d",&ele);
+	cout<<"Enter the element to be searched"<<endl;
+	cin>>ele;
 	n = binsearch(arr,0,n,ele);
 	if(n == -1)
 	{
-		printf("\n\tElement not found\n");
-		getch();
+		cout<<"Element not found"<<endl;
 		return 0;
 	}
-	printf("\n\tElement %d found at index %d",ele,n);
+	cout<<"Element "<<ele<<" found at index "<<n<<endl;;
 	return 0;
 }
